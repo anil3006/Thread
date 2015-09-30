@@ -15,7 +15,7 @@ public class BankAccount {
 	}
 
 	public synchronized double  deposit(double amt) {
-		
+		System.out.println("deposit method");
 		balance = balance+amt; 
 		notify();
 		return balance;
